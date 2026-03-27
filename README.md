@@ -1,79 +1,196 @@
+# 🗺️ The Last Explorer
 
-## The Last Explorer
+**The Last Explorer** is a **group C++ text-based adventure game** built using object-oriented programming principles. The player progresses through dangerous environments, solves puzzles, collects items, survives combat encounters, and makes choices that determine whether the story ends in victory or failure.
 
-## Course Information
+This project also reflects our practical use of **AI-assisted development tools** to improve coding speed, organization, and iteration while keeping human control over design, review, and testing.
 
-Course: CPSC 2720 – Object-Oriented Programming
-Institution: University of Lethbridge
-Project: Text-Based Adventure Game (Major Project)
+---
 
-## Team Members:
--Gurnoor Kaur
--Issar Singh
--Muskan
+## 📌 Course Information
 
-## Overview
+- **Course:** CPSC 2720 – Object-Oriented Programming  
+- **Institution:** University of Lethbridge  
+- **Project Type:** Major Group Project  
 
-The Last Explorer is a text-based adventure game that follows a lone adventurer on a quest through mysterious and dangerous environments — a raging river, a perilous forest, and a dark cave. The player faces different challenges, including puzzles, combat, and decision-making moments that shape the outcome of the story. Each environment presents unique choices: crossing a deadly river, battling a bear in the forest, and fighting a soldier in the final cave. Success in these trials depends on logical thinking, strategic item use, and solving riddles along the way.
+---
 
-The game emphasizes exploration, survival, and reasoning. Players must manage their health, collect tools like an axe and lamp, and solve puzzles to progress. Every decision affects the storyline — victory brings rewards like health restoration or upgraded weapons, while failure results in game over. By blending storytelling with interactive gameplay, The Last Explorer delivers an engaging experience built on choice, logic, and courage.
+## 👥 Team Members
 
-## Game Design Elements
+- **Gurnoor Kaur**
+- **Issar Singh**
+- **Muskan Chauhan**
 
-Core Concepts: Exploration, puzzle-solving, and combat.
+---
 
-Game Mechanics: Player decision-making affects progression and outcome.
+## 🎯 Project Overview
 
-Reward System: Players earn health and items by solving puzzles and winning battles.
+The Last Explorer follows a lone adventurer on a quest for hidden treasure. The journey begins at a raging river and continues through a forest, a maze-like path, and a dark cave. Along the way, the player must solve puzzles, choose safe actions, defeat enemies, and manage collected items to survive.
 
-Failure Consequence: Losing a battle results in Game Over.
+The game combines:
+- exploration
+- puzzle-solving
+- inventory-based progression
+- combat
+- branching outcomes based on player choices
 
-## Team Contributions (Design Phase)
+Success depends on using the correct items at the right time and answering puzzles correctly. Wrong decisions can lead directly to **Game Over**.
 
-Issar Singh: Designed the UML diagram and Sequence 1 diagram, outlining system flow and class interactions. Also wrote DRY and SOLID principle descriptions to ensure clean and reusable code structure.
+---
 
-Muskan: Created Sequence 2 and Sequence 3 diagrams, detailing player actions and interactions in later game stages. Authored class descriptions, explaining roles, attributes, and relationships.
+## ✨ Key Features
 
-Gurnoor Kaur: Assisted in designing the UML and sequence diagrams, contributed ideas for puzzles and gameplay flow, and helped maintain consistency across the documentation.
+- **Text-based adventure gameplay**
+- **Multiple environments** with different events
+- **Puzzle-driven progression**
+- **Inventory system** for item collection and use
+- **Health and points tracking**
+- **Combat scenarios**
+- **Choice-based outcomes**
+- **Object-oriented C++ design**
+- **Unit testing and code-quality tooling**
 
-## Team Contributions (Basic Design Implemention)
+---
 
-Teammate 1: Issar Singh
-Responsible for game flow, player logic, and inventory integration. Completed the GameManager, Player, and Inventory classes, including handling game lifecycle functions, transitions between environments, and input/output flow. Integrated all other systems into the playable game loop.
+## 🧱 Gameplay Flow
 
-Teammate 2: Gurnoor Kaur
-Responsible for environments, NPCs, and interaction logic. Completed the River, Forest, and Cave classes, environment descriptions, and movement logic. Implemented NPC interaction behavior and ensured environments connect smoothly with the main game flow.
+The player moves through the game in the following progression:
 
-Teammate 3: Muskan Chauhan
-Responsible for puzzles, items, and reward mechanics. Implemented Puzzle and PuzzleManager functionality, puzzle validation, the RewardSystem, and collectible items such as the Axe. Ensured puzzles are tied correctly to NPC interactions and update the Player’s inventory.
+1. **River Bank**
+   - Solve the maid’s cleaning-solution puzzle
+   - Earn money
+   - Choose whether to swim or pay the boatman
+   - Crossing safely grants an **axe**
 
-## Team Contribution (Final Implementation)
+2. **Gardener’s Field**
+   - Solve the flower-identification puzzle
+   - Earn points
 
-Teammate 1: Issar Singh – Game Flow & System Integration
-Finalized the main game loop logic and ensured smooth transitions between all stages (River → Garden → Forest → Maze → Cave → Final Puzzle).
-Connected the Player class with puzzle outcomes, combat results, and environment events.
-Handled health updates, point tracking, and dialogue flow to match the final game output.
-Integrated all systems into a complete and playable build.
+3. **Forest**
+   - Encounter a bear
+   - Survive only if the player has the **axe**
+   - Earn a **lamp**
 
+4. **Mystic Maze**
+   - Follow the lamp’s light
+   - Earn more points
 
-Teammate 2: Gurnoor Kaur – Environments & NPC Implementation
-Finalized and tested all environments:
-River, Gardener’s Field, Forest, Maze, Cave
-Completed NPC dialogues and interactions (Maid, Boatman, Gardener, Cavekeeper).
-Ensured each environment followed the final storyline logic and connected correctly with the GameManager.
-Verified that player choices lead to the correct outcomes (progression or Game Over).
+5. **Cave Entrance**
+   - Solve the cavekeeper’s riddle
+   - Earn a **sword**
 
+6. **Final Battle & Symbol Puzzle**
+   - Defeat the monster using the sword
+   - Solve the final symbol sequence puzzle
+   - Unlock the treasure and win
 
-eammate 3: Muskan Chauhan – Final Puzzles, Items & Rewards System
-Implemented and connected all final puzzles:
-Cleaning Solution (w + v)
-Flower Identification (Rose)
-Cave Riddle (Egg)
-Final Symbol Puzzle (w l s m)
-Finalized the RewardSystem, ensuring correct distribution of:
-Money, Axe, Lamp, Sword, 
-Points (+10 per completed stage)
-Ensured that specific items were required for progression, such as:
-Axe needed to defeat the bear,
-Sword required to defeat the monster in the cave
-Integrated all collectibles through the ICollectible interface and connected them to the Player’s inventory.
+---
+
+## 🧩 Puzzle and Reward Design
+
+The game includes multiple puzzles tied directly to progression.
+
+### Puzzle examples
+- Cleaning solution puzzle
+- Flower identification puzzle
+- Cave riddle
+- Final symbol-matching puzzle
+
+### Reward examples
+- **Money**
+- **Axe**
+- **Lamp**
+- **Sword**
+- **Points**
+
+These rewards are not cosmetic. They are required for progression and survival.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language:** C++
+- **Standard:** C++14
+- **Compiler:** g++
+- **Build Tool:** Makefile
+- **Testing:** Google Test
+- **Static Analysis:** cppcheck
+- **Style Checking:** cpplint
+- **Memory Checking:** valgrind
+- **CI Configuration:** `.gitlab-ci.yml`
+
+---
+
+## 📂 Project Structure
+
+```text
+text-adventure-game/
+│
+├── include/
+│   ├── Axe.hpp
+│   ├── Cave.hpp
+│   ├── Environment.hpp
+│   ├── Forest.hpp
+│   ├── GameManager.hpp
+│   ├── ICollectible.hpp
+│   ├── IInteractable.hpp
+│   ├── IPlayer.hpp
+│   ├── Inventory.hpp
+│   ├── Item.hpp
+│   ├── NPC.hpp
+│   ├── Player.hpp
+│   ├── Puzzle.hpp
+│   ├── PuzzleManager.hpp
+│   ├── RewardSystem.hpp
+│   ├── River.hpp
+│   └── character.hpp
+│
+├── src/
+│   ├── Forest.cpp
+│   ├── GameManager.cpp
+│   ├── Inventory.cpp
+│   ├── Item.cpp
+│   ├── NPC.cpp
+│   ├── Player.cpp
+│   ├── Puzzle.cpp
+│   ├── PuzzleManager.cpp
+│   ├── RewardSystem.cpp
+│   ├── River.cpp
+│   └── cave.cpp
+│
+├── test/
+│   ├── main.cpp
+│   ├── test_Cave.cpp
+│   ├── test_Forest.cpp
+│   ├── test_ICollectible.cpp
+│   ├── test_Item_Axe.cpp
+│   ├── test_NPC.cpp
+│   ├── test_Puzzle.cpp
+│   ├── test_PuzzleManager.cpp
+│   ├── test_RewardsSystem.cpp
+│   ├── test_gamemanager.cpp
+│   ├── test_inventory.cpp
+│   └── test_player.cpp
+│
+├── docs/
+├── Makefile
+├── CPPLINT.cfg
+├── .gitlab-ci.yml
+└── README.md
+```
+## ▶️ Build and Run
+
+### Build
+
+```bash
+make
+```
+Additional checks
+```
+make static
+make style
+make memcheck
+```
+What these do
+make static → runs static analysis using cppcheck
+make style → checks style using cpplint
+make memcheck → checks for memory issues using valgrind
