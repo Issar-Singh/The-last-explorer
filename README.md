@@ -191,6 +191,6 @@ make style
 make memcheck
 ```
 What these do
-make static → runs static analysis using cppcheck
-make style → checks style using cpplint
-make memcheck → checks for memory issues using valgrind
+- make static → runs static analysis using cppcheck
+- make style → checks style using cpplint
+- make memcheck → checks for memory issues using valgrind
